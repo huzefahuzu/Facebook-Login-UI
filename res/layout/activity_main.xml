@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#25c"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/fbtextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        style="@style/huzu"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:text="facebook" />
+
+    <TextView
+        android:id="@+id/emailview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/fbtextview"
+        android:layout_below="@+id/fbtextview"
+        style="@style/huzu"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Email" 
+        android:padding="2dp"
+        
+        />
+    
+    <EditText 
+        
+        android:id="@+id/emailedittext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/emailview"
+        android:background="#fff"
+        
+        
+        />
+
+    <TextView
+        android:id="@+id/passwordview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/emailedittext"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        style="@style/huzu"
+        android:text="Password" />
+    
+     <EditText 
+        
+        android:id="@+id/passedittext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/passwordview"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:inputType="textPassword"
+        android:background="#fff"        
+        
+        />
+
+     <CheckBox
+         android:id="@+id/checkBox1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@id/passedittext"
+         android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+         android:checked="true"
+         style="@style/huzu"
+         android:text="Save Login" />
+
+     <TextView
+         android:id="@+id/signup"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentRight="true"
+         android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+         style="@style/huzu"
+         android:text="Need an Account ? \n Sign Up using your phone" />
+
+</RelativeLayout>
